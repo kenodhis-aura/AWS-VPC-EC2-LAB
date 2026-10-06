@@ -1,0 +1,57 @@
+AWS VPC & EC2 Connectivity Test
+================================
+
+EC2 Instance:
+aws-cloud-support-server
+
+Private IP:
+10.0.1.110
+
+Public IP:
+51.20.84.127
+
+Test 1 — Internet Connectivity
+Command:
+ping -c 4 8.8.8.8
+
+Result:
+4 packets transmitted, 4 received
+0% packet loss
+
+Test 2 — DNS Resolution
+Command:
+ping -c 4 www.google.com
+
+Result:
+4 packets transmitted, 4 received
+0% packet loss
+
+Test 3 — HTTPS Connectivity
+Command:
+curl -I https://aws.amazon.com
+
+Result:
+HTTP/2 200
+
+Test 4 — HTTPS Redirect
+Command:
+curl -I https://google.com
+
+Result:
+HTTP/2 301
+Redirect: https://www.google.com/
+
+Test 5 — AWS Instance Metadata
+IMDSv2
+
+Instance ID:
+i-04f0cc7a881fd4054
+
+Private IPv4:
+10.0.1.110
+
+Region:
+eu-north-1
+
+Result:
+All connectivity and instance metadata tests successful.
