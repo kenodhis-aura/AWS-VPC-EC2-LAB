@@ -1,0 +1,20 @@
+AWS VPC Configuration
+
+VPC Name: aws-cloud-support-vpc
+VPC CIDR: 10.0.0.0/16
+
+Public Subnet: public-subnet-1
+Public Subnet CIDR: 10.0.1.0/24
+
+Internet Gateway: aws-cloud-support-igw
+
+Route Table: aws-cloud-support-public-rt
+Default Route: 0.0.0.0/0 -> Internet Gateway
+
+EC2 Instance: aws-cloud-support-server
+Instance Type: t3.micro
+Private IP: 10.0.1.110
+Public IP: 51.20.84.127
+
+Operating System: Amazon Linux 2023
+Region: Europe (Stockholm) / eu-north-1
