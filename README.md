@@ -166,9 +166,9 @@ Hostname:
 ip-10-0-1-110.eu-north-1.compute.internal
 ```
 
-## Connectivity Testing
+# Connectivity Testing
 
-# Internet Connectivity
+## Internet Connectivity
 
 The instance successfully reached Google's public DNS server:
 
